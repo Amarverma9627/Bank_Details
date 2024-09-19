@@ -1,6 +1,6 @@
 .img-wrapper{
     position: relative;
-    background-image: url(blc.png);
+    background-image: url(assets/blc.png);
     
     height: 600px;
     background-size:cover;
