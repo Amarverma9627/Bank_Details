@@ -1,0 +1,167 @@
+.relate{
+    position: relative;
+    background-image: url('drop.png');
+    width: 100%;
+    height: 615px;
+   
+    background-position:right;
+    
+}
+
+.main-box .new{
+    position: absolute;
+    font-size: 25px;
+    width: 200px;
+    text-shadow: 5px 5px 10px black;
+    margin: 10px 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange;
+    
+    
+}
+.relate .main-box .text-detail{
+    position: absolute;
+    height: 35px;
+    width: 235px;
+    background-color: #f006;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 55px 115px;
+    border-radius: 10px 0px 10px 0px ;
+}
+
+.all-item{
+    margin-top: 50px;
+    margin-left: -10px;
+}
+.main-box{
+    height: 480px;
+    width: 450px;
+    position: absolute;
+    top: 70px;
+    right: 450px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border:2px solid pink;
+}
+.input-1{
+    position: relative;
+   
+}
+.input-1 p{
+    position: absolute;
+    margin: -45px 105px;
+    color: red;
+
+}
+.main-box .input-1 input{
+    height: 40px;
+    width: 330px;
+    margin: 50px 100px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    color: white;
+}
+.main-box .input-1 label{
+    position: absolute;
+    padding: 57px 40px;
+    opacity: 0.6;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.input-2{
+    position: relative;
+}
+.input-2 p{
+    position: absolute;
+    margin: 25px 105px;
+    color: red;
+}
+.main-box .input-2 input{
+    height: 40px;
+    width: 330px;
+    margin: -20px 100px;
+    position: absolute;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    color: white;
+}
+.main-box .input-2 label{
+    position: absolute;
+    margin: -15px 40px;
+    opacity: 0.6;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.input-3{
+    position: relative;
+}
+.input-3 p{
+    position: absolute;
+    margin: -45px 105px;
+    color: red;
+}
+.main-box .input-3 input{
+    height: 40px;
+    width: 330px;
+    margin: 50px 100px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    color: white;
+}
+.main-box .input-3 label{
+    position: absolute;
+    position: absolute;
+    padding: 58px 19px;
+    opacity: 0.6;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+} 
+.main-box  .slt{
+    position: absolute;
+    margin: 10px 100px; 
+    transition: 0.4s ease-in-out;
+}
+.main-box  .slt select{
+    height: 35px;
+    width: 150px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.main-box button{
+    height: 35px;
+    width: 150px;
+    
+    margin: 10px 257px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+.main-box button:active{
+    background-color: aliceblue;
+    color: black;
+}

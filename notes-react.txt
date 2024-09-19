@@ -1,0 +1,27 @@
+//5-07-2024
+
+//useeffect
+it is a specal type of hooks which takes two argument 1.function 2. array 
+
+1.if u are assigning the blank array as a second argument in useeffect so that function will only work at once
+
+ex. useEffect(()=>{
+    alert('page loaded')
+},[])
+
+2.if u are not giving blank array as a second argument so that function will work on every state update 
+ex. useEffect(()=>{
+    alert('page loaded')
+});
+
+3.if u are giving any  state to tha array  as dependancy so that function will work only when that state will update which u are giving   to the dependancy
+
+ex. useEffect(()=>{
+    alert('page loaded')
+},[data])
+
+
+
+//GitHub 03/08/24
+
+1. GitHub download for windows
