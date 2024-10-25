@@ -55,7 +55,7 @@ function App() {
         <div className='layer'></div>
       </div>
       <div className='header'>
-        <p className='log'>Log-in</p>
+        <p className='log'>Sign-in</p>
         {invalid && <p className=' text-c'>Invalid Name & Password ! </p>}
 
         <div className='input1'>

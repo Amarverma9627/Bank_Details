@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./newAc.css";
 import { Maindata } from "./Globaldata.jsx";
 import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const NewAc = () => {
     const [input, setinput] = useState('')
@@ -15,6 +16,7 @@ const NewAc = () => {
     const Navigate = useNavigate();
     console.log(input, input2, input3, val)
 
+    
     const sub = () => {
         if (input === '') {
             seterror(true)
@@ -48,6 +50,9 @@ const NewAc = () => {
         }
         else {
             setdetail(true)
+            setTimeout(()=>{
+                setdetail(false)
+            },2000)
         }
     }
 
@@ -55,11 +60,12 @@ const NewAc = () => {
     return (
         <div className="relate">
             <div className="main-box">
-                <p className="new">Create New Ac</p>
+            <Link to="/dashboard"><i class="fa fa-arrow-left" aria-hidden="true" id="arrow"></i></Link>
+                <p className="new">Create New Ac </p>
                 {detail && <p className="text-detail">⚠ Plz Enter Details !</p>}
                 <div className="all-item">
                     <div className="input-1">
-                        <label>Name</label>
+                        {/* <label>Name</label> */}
                         <input
                             type="text" placeholder="Name"
                             onChange={(e) => setinput(e.target.value)}
@@ -68,7 +74,7 @@ const NewAc = () => {
                     </div>
                     <div className="input-2">
 
-                        <label>AcNo</label>
+                        {/* <label>AcNo</label> */}
                         <input
                             type="Number" placeholder="Ac.no."
                             onChange={(e) => setinput2(e.target.value)}
@@ -77,7 +83,7 @@ const NewAc = () => {
                     </div>
                     <div className="input-3">
 
-                        <label>Amount</label>
+                        {/* <label>Amount</label> */}
                         <input
                             type="number" placeholder="InitialAmt."
                             onChange={(e) => setinput3(e.target.value)}
@@ -96,6 +102,7 @@ const NewAc = () => {
                     </div>
 
                     <button onClick={sub}>Submit</button>
+                    
                 </div>
             </div>
         </div>

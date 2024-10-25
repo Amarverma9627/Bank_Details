@@ -1,25 +1,49 @@
-.relate{
+.relate {
     position: relative;
-    background-image: url('assets/drop.png');
+    /* background-image: url('assets/drop.png'); */
     width: 100%;
     height: 615px;
-   
-    background-position:right;
-    
+    background: linear-gradient(180deg,rgba(118, 62, 208, 1) 0%, rgba(46, 27, 160, 1) 155.56%);
+    background-position: right;
+
 }
 
-.main-box .new{
+.main-box {
     position: absolute;
+    height: 480px;
+    width: 400px;
+    top: 70px;
+    right: 450px;
+    background: rgba(255, 255, 255, 0.712);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(240, 231, 231)
+}
+
+.main-box .new {
+    /* position: absolute;
     font-size: 25px;
     width: 200px;
     text-shadow: 5px 5px 10px black;
-    margin: 10px 150px;
+    margin: 10px 110px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: orange;
-    
-    
+    color: rgba(0, 0, 0, 0.603);
+    font-weight: 600; */
+    background-image: url("assets/dev2.jpg");
+    height: 50px;
+    width: 220px;
+    z-index: 1;
+    position: absolute;
+    margin: 20px 100px;
+    font-size: 30px;
+    font-weight: 600;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip:text ;
+    background-position:left;
+    background-size: 200%;
 }
-.relate .main-box .text-detail{
+
+.relate .main-box .text-detail {
     position: absolute;
     height: 35px;
     width: 235px;
@@ -28,118 +52,123 @@
     align-items: center;
     justify-content: center;
     color: white;
-    margin: 55px 115px;
-    border-radius: 10px 0px 10px 0px ;
+    margin: 55px 90px;
+    border-radius: 10px 0px 10px 0px;
 }
 
-.all-item{
+.all-item {
     margin-top: 50px;
     margin-left: -10px;
 }
-.main-box{
-    height: 480px;
-    width: 450px;
-    position: absolute;
-    top: 70px;
-    right: 450px;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    border:2px solid pink;
-}
-.input-1{
+
+.input-1 {
     position: relative;
-   
+
 }
-.input-1 p{
+
+.input-1 p {
     position: absolute;
-    margin: -45px 105px;
+    margin: -45px 55px;
     color: red;
 
 }
-.main-box .input-1 input{
+
+.main-box .input-1 input {
     height: 40px;
-    width: 330px;
-    margin: 50px 100px;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
+    width: 320px;
+    margin: 50px 50px;
+    padding: 0px 5px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.425);
     outline: none;
-    font-size: 20px;
-    color: white;
+    background: transparent;
+    color: black;
 }
-.main-box .input-1 label{
+
+/* .main-box .input-1 label {
     position: absolute;
     padding: 57px 40px;
     opacity: 0.6;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-}
-.input-2{
+} */
+
+.input-2 {
     position: relative;
 }
-.input-2 p{
+
+.input-2 p {
     position: absolute;
-    margin: 25px 105px;
+    margin: 25px 55px;
     color: red;
 }
-.main-box .input-2 input{
+
+.main-box .input-2 input {
+    position: absolute;
     height: 40px;
-    width: 330px;
-    margin: -20px 100px;
-    position: absolute;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
+    width: 320px;
+    margin: -20px 50px;
+    padding: 0px 5px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.425);
     outline: none;
-    font-size: 20px;
-    color: white;
+    background: transparent;
+    color: black;
 }
-.main-box .input-2 label{
+
+
+.main-box .input-3 input {
     position: absolute;
-    margin: -15px 40px;
-    opacity: 0.6;
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    height: 40px;
+    width: 320px;
+    margin: 50px 50px;
+    padding: 0px 5px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.425);
+    outline: none;
+    background: transparent;
+    color: black;
 }
-.input-3{
+
+.input-3 {
     position: relative;
 }
-.input-3 p{
+
+.input-3 p {
     position: absolute;
-    margin: -45px 105px;
+    margin: 95px 55px;
     color: red;
 }
-.main-box .input-3 input{
-    height: 40px;
-    width: 330px;
-    margin: 50px 100px;
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    outline: none;
-    font-size: 20px;
-    color: white;
-}
-.main-box .input-3 label{
+
+.main-box .slt {
     position: absolute;
-    position: absolute;
-    padding: 58px 19px;
-    opacity: 0.6;
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-} 
-.main-box  .slt{
-    position: absolute;
-    margin: 10px 100px; 
+    margin: 140px 50px;
     transition: 0.4s ease-in-out;
 }
-.main-box  .slt select{
+
+.main-box .slt select {
     height: 35px;
     width: 150px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.747);
+    opacity: 0.6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.main-box button {
+    height: 35px;
+    width: 150px;
+    margin: 140px 230px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.747);
     opacity: 0.6;
     color: white;
     border: none;
@@ -147,21 +176,18 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-.main-box button{
-    height: 35px;
-    width: 150px;
-    
-    margin: 10px 257px;
-    position: absolute;
-    background-color: black;
-    opacity: 0.6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-}
-.main-box button:active{
+
+.main-box button:active {
     background-color: aliceblue;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.747);
+}
+
+#arrow {
+    position: absolute;
+    margin: 1.5rem 2.7rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1;
     color: black;
 }

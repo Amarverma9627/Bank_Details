@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Maindata } from "./Globaldata"
 
 
 const Dashboard = () => {
     const [data, setdata] = useState([])
-
+    let Navigate=useNavigate();
     useEffect(() => {
         setdata(Maindata)
     }, [])
+
+    let home=()=>Navigate("/")
 
     let click = (val) => {
         if(val==='All-data'){
@@ -36,7 +38,11 @@ const Dashboard = () => {
                 <div className="circle two">
                 
                 </div>
+                
             <div className="main-header">
+            <div className="home">
+                <i onClick={home} class="fa fa-home" aria-hidden="true"></i>
+                </div>
                 <Link to="/createAc" className="link"><p>CreateA/C</p></Link>
                 <Link to="/deposit" className="link"><p>Deposit</p></Link>
                 <Link to="/widthdraw" className="link"><p>Withdraw</p></Link>

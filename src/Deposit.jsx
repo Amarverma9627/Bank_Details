@@ -3,7 +3,7 @@ import "./deposit.css"
 import { Maindata } from "./Globaldata";
 import { useNavigate } from "react-router-dom";
 import { deposit } from './Globaldata';
-
+import { Link } from "react-router-dom";
 
 const Deposit = () => {
     const [input, setinput] = useState(null)
@@ -58,10 +58,11 @@ const Deposit = () => {
     return (
         <div className="img-wrapper">
             <div className="box">
+            <Link to="/dashboard"><i class="fa fa-arrow-left" aria-hidden="true" id="arrow"></i></Link>
                 <h1>Deposit</h1>
                 {Mainerror && <p className="main-err">PLz Enter Details !</p>}
                 <div className="input-1">
-                    <label>AcNo.</label>
+                    {/* <label>AcNo.</label> */}
                     <input
                         type="text"
                         placeholder="Acount No."
@@ -70,7 +71,7 @@ const Deposit = () => {
                     {error &&<p>Plz Enter Account No. !</p>}
                 </div>
                 <div className="input-2">
-                    <label>Amount</label>
+                    {/* <label>Amount</label> */}
                     <input
                         type="text"
                         placeholder="Amount"
@@ -80,8 +81,10 @@ const Deposit = () => {
                 </div>
                 <div>
                     <button onClick={depositData}>Submit</button>
-                    {wrongAc &&<p className="match-ac">Plz check AcNo ! </p>}
+                    {wrongAc &&<p className="match-ac">Plz check AcNo & AcName! </p>}
+                      
                 </div>
+                
             </div>
 
         </div>
